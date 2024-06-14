@@ -1,0 +1,22 @@
+
+@media (max-width: 600px) {
+    
+
+    /* hide Ul and show Hamburger */
+    nav ul{
+        display: none;
+    }
+
+    .hambuger{
+        display: block;
+        color: whitesmoke;
+        font-weight: bolder;
+        font-size: 1.8rem;
+    }
+
+    #temple-card-container{
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+   
+}
