@@ -1,10 +1,29 @@
 
 @media (max-width: 600px) {
     
+    nav{
+        position: relative;
+    }
 
     /* hide Ul and show Hamburger */
     nav ul{
+        position: absolute;
         display: none;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: #455732;
+        
+    }
+
+    nav .links{
+        display: block;
+    }
+
+    nav ul li{
+        border-bottom: 1px solid #283618;
+        padding: 20px;  
+        text-align: right;
     }
 
     .hambuger{
