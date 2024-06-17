@@ -22,10 +22,17 @@
         text-align: center;
         padding: 2rem;
         padding-bottom: 1rem;
+        color: #000;
         background-color: transparent;
     }
 
-    .weather #mini-weather-img{
+    #card-holder hr{
+        display: block;
+    }
+    .weather h2{
+        justify-content: center;
+    }
+    .weather #h2-weather-img{
         display: none;
     }
 
