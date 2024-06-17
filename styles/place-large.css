@@ -84,6 +84,7 @@ main{
 }
 #card-holder .info ul li{
     text-align: center;
+    font-size: 12px;
 }
 #card-holder .info ul span{
     font-weight: bolder;
