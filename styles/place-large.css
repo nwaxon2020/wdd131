@@ -1,0 +1,130 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+
+    --header-bg-color: #03045e;
+}
+
+nav{
+    background-color: var(--header-bg-color);
+    color: whitesmoke;
+    text-align: center;
+    padding: 1.8rem;
+    border-bottom: 20px solid #ec3434;
+}
+nav h1{
+    font-size: 2rem;
+}
+
+/* Main part ----------------------*/
+#card-holder hr{
+    display: none;
+}
+#card-holder{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    justify-items: center;
+    align-items: center;
+}
+#card-holder picture{
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.data{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-bottom: -10rem;
+    margin-right: -2rem;
+    max-width: 100%;
+}
+.weather{
+    position: relative;
+    height: auto;
+    grid-column: 3/4;
+    grid-row: 2/3;
+    margin-top: -20rem;
+    margin-left: -2rem;
+    max-width: 100%;
+}
+
+#card-holder .info{
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: whitesmoke;
+    overflow: hidden;
+}
+#card-holder .info h2{
+    background-color: var(--header-bg-color);
+    padding: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+}
+#card-holder .info ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+}
+
+#card-holder .info ul span{
+    font-weight: bolder;
+}
+
+#card-holder picture img{
+    max-width: 100%;
+    height: auto;
+}
+.weather #mini-weather-img{
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    max-width: 50px;
+    height: auto;
+}
+.weather #max-weather-img{
+    display: none;
+}
+
+/* footer part ----------------------*/
+footer {
+    margin-top: 0px;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--header-bg-color);
+}
+
+footer p {
+    font-family: var(--font-header-1);
+    font-size: 1.3rem;
+    color: white;
+}
+
+footer p:nth-child(2) {
+    color: whitesmoke;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

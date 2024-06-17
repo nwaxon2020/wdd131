@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Place Project</title>
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+  
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- script links -->
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Temple Album</h1>
+        </nav>
+    </header>
+    <main>
+        <div id="card-holder">
+            <picture>
+                <source srcset="images/enugu-waterFall-large.webp" media="(min-width: 600px)">
+                <source srcset="images/enugu-waterFalls-small.webp" media="(min-width: 200px)">
+                <img src="images/enugu-waterFall-large.webp" alt="Enugu water fall">
+            </picture>
+            
+            <div class="info data">
+                <h2>Data</h2>
+                <ul id="data">
+                    <li><span>Area: 234 567 km o2</span></li>
+                    <li><span>Popolation:</span> Antanavario</li>
+                    <li><span>Capital:</span></li>
+                    <li><span>Languages:</span></li>
+                    <li><span>Currency:</span></li>
+                    <li><span>Time Zone:</span></li>
+                    <li><span>Calling Code:</span></li>
+                    <li><span>Internet TLD:</span></li>
+                </ul>
+            </div><hr>
+            <div class="info weather">
+
+                <h2>Weather</h2>
+                <img id="mini-weather-img" src="images/weather-icon-png-small.png" alt="weather condition report mini">
+                <img id="max-weather-img" src="images/weather-icon-png-small.png" alt="weather condition report">
+         
+                <ul id="weather">
+                    <li><span>Temprature:</span>10 c</li>
+                    <li><span>Conditions:</span> partly Cloudy</li>
+                    <li><span>Wind:</span></li>
+                    <li><span>Wind Chill:</span></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎇 Nwachukwu Ogbonnaya Prince 🎇 Nigeria</p>
+        <p id="lastModified"> lastModified </p>
+    </footer>
+</body>
+</html>
