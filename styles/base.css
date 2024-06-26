@@ -12,7 +12,7 @@
     font-family: sans-serif;
 }
 
-/* header h1 ------------------------------------*/
+
 header h1 {
     background-color: var(--heade-bg--colour);
     font-family: var(--font-header-1);
@@ -28,7 +28,7 @@ header h1 span {
     color: var(--highlight-color);
 }
 
-/* header nav ----------------------------*/
+
 header nav {
     background-color: #333333;
 }
@@ -59,7 +59,7 @@ header nav ul a:hover {
     text-decoration: underline;
 }
 
-/* main section -----------------------------*/
+
 main {
     margin: 0 auto;
     display: grid;
@@ -113,7 +113,7 @@ main {
     margin-right: 10px;
 }
 
-/* second card section*/
+
 .card ul {
     margin: 0 3rem;
     margin-top: 40%;
@@ -128,7 +128,7 @@ main {
     color: blue;
 }
 
-/* footer part------------------ */
+
 footer {
     padding: 1rem;
     text-align: center;

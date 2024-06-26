@@ -5,7 +5,7 @@
         position: relative;
     }
 
-    /* hide Ul and show Hamburger */
+   
     nav ul{
         position: absolute;
         display: none;
