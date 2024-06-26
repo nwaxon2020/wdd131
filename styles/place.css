@@ -32,7 +32,7 @@
     .weather h2{
         justify-content: center;
     }
-    .weather #h2-weather-img{
+    .weather h2::after{
         display: none;
     }
 
