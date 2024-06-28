@@ -10,6 +10,9 @@
     --header-bg-color: #283618;
 }
 
+body{
+    background-color: #e3e3e3;
+}
 
 .hambuger{
     display: none;

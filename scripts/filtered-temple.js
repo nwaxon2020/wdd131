@@ -3,6 +3,10 @@ const hambugBtn = document.querySelector(".fa-bars");
 
 const templeContainer = document.getElementById("temple-card-container");
 
+const userChoice = document.querySelectorAll(".user-choice");
+const pageTitle = document.getElementById("temp-display-title");
+
+const changeBackgroundColor = document.querySelector("body");
 
 hambugBtn.addEventListener("click", ()=>{
     if(hambugBtn.classList.contains("fa-bars")){
@@ -124,13 +128,6 @@ const temples = [
 //   templeContainer.appendChild(div);
 // });
 
-
-
-const userChoice = document.querySelectorAll(".user-choice");
-const pageTitle = document.getElementById("temp-display-title");
-
-
-
 for(let tempInfo of temples){
 
     let divContan = document.createElement("div");
@@ -155,32 +152,37 @@ userChoice.forEach((selected)=>{
 
     selected.addEventListener("click", ()=>{
 
+        hambugBtn.classList.remove("fa-angle-double-up");
+        hambugBtn.classList.add("fa-bars");
+        ul.classList.toggle("links");
+
         templeContainer.innerHTML ="";
 
         if(selected.classList.contains("old")){
 
-            pageTitle.textContent = "Old Temples"
-            filteredTemple = temples.filter((temple)=> temple.year < 2015)
+            pageTitle.textContent = "Old Temples";
+            filteredTemple = temples.filter((temple)=> temple.year < 1900)
 
         }else if(selected.classList.contains("new")){
 
-            pageTitle.textContent = "New Temples"
-            filteredTemple = temples.filter((temple)=> temple.year >= 2015)
+            pageTitle.textContent = "New Temples";
+            filteredTemple = temples.filter((temple)=> temple.year > 2000)
 
         }else if(selected.classList.contains("large")){
 
-            pageTitle.textContent = "Large Temples"
-            filteredTemple = temples.filter((temple)=> temple.area < 17000)
+            pageTitle.textContent = "Large Temples";
+            filteredTemple = temples.filter((temple)=> temple.area > 90000)
 
         }else if(selected.classList.contains("small")){
 
-            pageTitle.textContent = "small Temples"
-            filteredTemple = temples.filter((temple)=> temple.area >= 17000)
+            pageTitle.textContent = "small Temples";
+            filteredTemple = temples.filter((temple)=> temple.area < 10000 )
 
         }else{
 
             pageTitle.textContent = "All Temples"
             filteredTemple = temples;
+            
         }
 
         
