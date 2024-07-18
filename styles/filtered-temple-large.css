@@ -1,0 +1,129 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Quicksand", sans-serif;
+}
+
+:root{
+
+    --header-bg-color: #283618;
+}
+
+body{
+    background-color: #e3e3e3;
+}
+
+.hambuger{
+    display: none;
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem;
+    background-color: var(--header-bg-color);
+}
+
+nav h1{
+    color: whitesmoke;
+    font-weight: bolder;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+}
+ul a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: whitesmoke;
+}
+ul a:hover{
+    opacity: 0.7;
+}
+
+main{
+    margin: 0 auto;
+}
+#temp-display-title{
+    margin-top: 3rem;
+    text-align: center;
+    text-decoration: underline;
+    color: #e9500a;
+    font-family: 'Times New Roman', Times, serif;
+}
+picture source{
+    width: 100%;
+}
+
+main h2{
+    text-align: center;
+    margin: 2rem;
+}
+
+#temple-card-container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5rem;
+    text-align: center;
+    gap: 10px;
+}
+
+#temple-card-container h2{
+    margin-bottom: 1rem;
+}
+#temple-card-container span{
+    color: #e9500a;
+    font-weight: bolder;
+}
+#temple-card-container p{
+    text-align: center;
+}
+#temple-card-container img{
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    margin-top: 5rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--header-bg-color);
+}
+
+footer p {
+    font-family: var(--font-header-1);
+    font-size: 1.3rem;
+    color: white;
+}
+
+footer p:nth-child(2) {
+    color: whitesmoke;
+    font-weight: 100;
+    word-spacing: 2px;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

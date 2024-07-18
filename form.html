@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Place Project</title>
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/form.css">
+  
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- script links -->
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Product Review</h1>
+        </nav>
+    </header>
+    <main>
+        <form id="review-form">
+            <label for="product">Product Name</label>
+            <select  name="product" id="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <!-- dynamic options here -->
+            </select>
+
+            <label for="over-rating">Overall-Rating</label>
+            <div id="rating">
+                <div>
+                    <label for="star1">★</label>
+                    <input type="radio" name="over-rating" id="star1" value="star1">                    
+                </div>
+                
+                <div>
+                    <label for="star2">★★</label>
+                    <input type="radio" name="over-rating" id="star2" value="star2">               
+                </div>
+    
+                <div>
+                    <label for="star3">★★★</label>
+                    <input type="radio" name="over-rating" id="star3" value="star3">                
+                </div>
+    
+                <div>
+                    <label for="star4">★★★★</label>
+                    <input type="radio" name="over-rating" id="star4" value="star4">                
+                </div>
+    
+                <div>
+                    <label for="star5">★★★★★</label>
+                    <input type="radio" name="over-rating" id="star5" value="star5">                
+                </div>
+    
+            </div>
+            <label for="date">Date Of Installation</label>
+            <input type="date" name="date" id="date" required>
+
+            <label>Which features did you find useful in our product? <br><span>(Check all that apply)</span></label>
+            <div>
+                <input type="checkbox" name="review" id="durability" value="durability">
+                <label for="durability">Durability</label><br>
+                
+                <input type="checkbox" name="review" id="easy" value="easy to use">
+                <label for="easy">Easy to use</label><br>
+    
+                <input type="checkbox" name="review" id="performance" value="performance">
+                <label for="performance">Performance</label><br>
+    
+                <input type="checkbox" name="review" id="design" value="design">
+                <label for="design">Design</label>
+            </div>
+
+            <label for="write-review">Written Review <span>(Optional)</span></label>
+            <textarea id="write-review" name="write-review" rows="5"></textarea>
+            
+            <label for="sender-name">Your Name <span>(Optional)</span></label>
+            <input type="text" id="sender-name" name="sender-name">
+            
+            <button type="submit">Post Review</button>
+
+        </form>
+
+        <h3 id="review-amount">Total Review: <span id="review-amount-span"></span></h3>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎇 Nwachukwu Ogbonnaya Prince 🎇 Nigeria</p>
+        <p id="lastModified"> lastModified </p>
+    </footer>
+</body>
+</html>

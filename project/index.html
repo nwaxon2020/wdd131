@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Lane Home Page</title>
+
+    <meta property="og:title" content="Mobile Lane Home Page">
+    <meta property="og:description" content="Get affordable Phones, Accessories and Gadgets through or webiste.">
+    <meta property="og:image" content="https://nwaxon2020.github.io/wdd131/project/image/outlet-small.jpg">
+    <meta property="og:url" content="https://nwaxon2020.github.io/wdd131/project/siteplan.html">
+
+
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+ES+Deco:wght@100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="image/fav_icon.png" type="image/png">
+
+    <script src="scripts/siteProject.js" defer></script>
+    <script src="scripts/phoneLastModified.js" defer></script>  
+</head>
+<body class="bd">
+    <header>
+        <nav>
+            <h3 id="logo"><a href="index.html">MB-Lane</a></h3>
+            <div>
+                <ul class="links">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="siteplan.html">Site-Plan</a></li>
+                    <li><a class="change-theme">Dark-Mode</a></li>
+                </ul>  
+                <div id="cart">
+                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-shopping-cart"></i>
+                    <span id="cart-count"></span>
+                </div>  
+            </div>           
+        </nav>
+    </header>
+    <main>
+    
+        <div class="hero-image">
+
+            <div class="phone-pic"></div>
+
+            <div class="phone-spec"></div>
+
+            <div id="indicator-container">
+                <div class="inicator indicating"></div>
+                <div class="inicator"></div>
+                <div class="inicator"></div>
+                <div class="inicator"></div>
+                <div class="inicator"></div>
+                <div class="inicator"></div>
+            </div>
+        </div>
+        <div class="related">
+
+            <h2>You might also Like</h2>
+            <!-- display also like -->
+
+        </div>
+
+        <div class="intro">
+            <h1>Mobile-Lane<span>(MB-Lane)</span></h1>
+            <p>Are you looking for where to get quality devices? then you've come to the right place!!! <br>Welcome to Mobile-LANE, your ultimate destination for the latest smartphones, unbeatable deals, and expert advice. Explore top brands, cutting-edge technology, and exceptional customer service, all in one place. Upgrade your mobile experience today with Mobile-LANE!</p>
+        </div>
+        
+        <div class="store-image">
+            <h2>Visit Our Outlet To Get amaizing Products</h2>
+            <picture>
+                <source srcset="image/oulet-big.jpg" media="(min-width: 600px)">
+                <source srcset="image/outlet-small.jpg" media="(min-width: 200px)">
+                <img src="image/outlet-small.jpg" alt="Phone store Image" loading="lazy">
+            </picture>
+            <div id="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093296!2d144.95373531531773!3d-37.8172099797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577d2d5fdec2e96!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1611234567890!5m2!1sen!2sau"
+                    loading="lazy">
+                </iframe>
+            </div>
+            <div class="work-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Days</th>
+                            <th>Activity Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Mondays</td>
+                            <td>9:00 AM - 7:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesdays</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>9:00 AM - 6:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Fridays</td>
+                            <td>10:00 AM - 5:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturdays</td>
+                            <td>10:30 AM - 4:30 PM</td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div><i class="fa fa-phone"></i> +2347034632037</div>
+        <div>
+            <p>&copy;<span id="currentyear"></span> 🎇 Nwachukwu Ogbonnaya Prince 🎇 Nigeria</p>
+            <p id="lastModified"> lastModified </p>
+        </div>
+        <div>
+            <a href=""><i class="fa fa-facebook-f"></i></a>
+            <a href="mailto:princenwachukwu308@yahoo.com"><i class="fa fa-envelope"></i></a>
+            <a href=""><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/phoneDetails.js"></script>
+</body>
+</html>

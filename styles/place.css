@@ -1,0 +1,52 @@
+
+@media (max-width: 600px) {
+    
+    nav h1{
+        font-size: 1.5rem;
+    }
+
+    #card-holder{
+        display: block;
+        text-align: center;
+    }
+    #card-holder picture img{
+        border-bottom: 10px solid #03045e;
+    }
+    #card-holder .info {
+        background-color: transparent;
+        color: #000;
+        padding-bottom: 30px;
+        margin: 0px;
+    }
+    #card-holder .info h2{
+        text-align: center;
+        padding: 2rem;
+        padding-bottom: 1rem;
+        color: #000;
+        background-color: transparent;
+    }
+
+    #card-holder hr{
+        display: block;
+    }
+    .weather h2{
+        justify-content: center;
+    }
+    .weather h2::after{
+        display: none;
+    }
+
+    .weather #max-weather-img{
+        display: inline-block;
+        margin: 0.5rem;
+        width: 100px;
+        height: auto;
+    }
+    footer{
+        margin-top: 1.5rem;
+    }
+    footer p {
+        font-size: 1rem;
+    }
+   
+}

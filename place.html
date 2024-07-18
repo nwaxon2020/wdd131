@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Place Project</title>
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+  
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- script links -->
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Enugu Nigeria</h1>
+        </nav>
+    </header>
+    <main>
+        <div id="card-holder">
+            <picture>
+                <source srcset="images/enugu-waterFall-large.webp" media="(min-width: 600px)">
+                <source srcset="images/enugu-waterFalls-small.webp" media="(min-width: 200px)">
+                <img src="images/enugu-waterFall-large.webp" alt="Enugu water fall">
+            </picture>
+            
+            <div class="info data">
+                <h2>Data</h2>
+                <ul id="data">
+                    <li><span>Area:</span> 7,161 km²</li>
+                    <li><span>Population:</span> Approximately 3.3 million (as of 2016)</li>
+                    <li><span>Capital:</span> Enugu</li>
+                    <li><span>Languages:</span> Igbo (primary), English</li>
+                    <li><span>Currency:</span> Nigerian Naira (NGN)</li>
+                    <li><span>Time Zone:</span> West Africa Time (WAT), UTC+1</li>
+                    <li><span>Calling Code:</span> +234</li>
+                    <li><span>Internet TLD:</span> .ng</li>
+                </ul>
+            </div>
+            <hr>
+            <div class="info weather">
+                <h2>Weather</h2>
+                <img id="max-weather-img" src="images/weather-icon-png-small.png" alt="weather condition report">
+                <ul id="weather">
+                    <!-- weather Info Here -->
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎇 Nwachukwu Ogbonnaya Prince 🎇 Nigeria</p>
+        <p id="lastModified"> lastModified </p>
+    </footer>
+</body>
+</html>

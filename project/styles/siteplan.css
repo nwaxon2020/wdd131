@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    text-align: center;
+}
+h1, h2 {
+    color: #005b96; /* Main heading color */
+}
+span {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #d51411; /* Subheading color */
+}
+body section:nth-child(3) p{
+    margin: 0 auto;
+    width: 70%;
+}
+ul li:nth-child(1) span{
+    color: #65755f;
+}
+ul li:nth-child(2) span{
+    color: #d51411;
+}
+ul li:nth-child(3) span{
+    color: #E7DFD4;
+    background-color: #000;
+}
+p {
+    color: #65755f; /* Paragraph text color */
+}
+.background {
+    background-color: #fff; /* Background color */
+    padding: 20px;
+}
+ul{
+    display: inline-block;
+    text-align: left;
+}
+nav{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #E7DFD4;
+    align-items: center;
+    justify-content: space-around;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+nav ul a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bolder;
+    color: #65755f;
+}
+nav ul a:hover{
+    color: #000;
+}
+nav h3 a{
+    font-family: "Playwrite ES Deco", cursive;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #d51411;
+    text-wrap: nowrap;
+}
+
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Temple Album Project</title>
+
+    <!-- style sheets -->
+    <link rel="stylesheet" href="styles/filtered-temple-large.css">
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+  
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <!-- Auseome fa fa fonts link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- script links -->
+    <script src="scripts/filtered-temple.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Temple Album</h1>
+
+            <div class="hambuger"><i class="fa fa-bars"></i></div>
+            
+            <ul class="ul">
+                <li class="user-choice home"><a href="filtered-temples.html">Home</a></li>
+                <li class="user-choice old"><a>Old</a></li>
+                <li class="user-choice new"><a>New</a></li>
+                <li class="user-choice large"><a>Large</a></li>
+                <li class="user-choice small"><a>Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="temp-display-title">All Temples</h1>
+
+        <div id="temple-card-container">         
+            <!-- temples -->
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🎇 Nwachukwu Ogbonnaya Prince 🎇 Nigeria</p>
+        <p id="lastModified"> lastModified </p>
+    </footer>
+</body>
+</html>
