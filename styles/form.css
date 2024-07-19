@@ -47,6 +47,13 @@ label[for="sender-name"]{
     display: inline-block;
     font-size: 1.2rem;
 }
+form label[for="product"] span, 
+label[for="over-rating"] span, 
+label[for="date"] span{
+
+    font-size: 2rem;
+    color: rgb(196, 51, 51);
+}
 
 label span{
     font-style: italic;
